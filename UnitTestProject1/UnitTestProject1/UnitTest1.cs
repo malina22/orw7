@@ -8,11 +8,11 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void TestAdd()
+        public void TestAdd() // publiczna klasa dodawania
         {
-            MathsComponent obj = new MathsComponent();
-            int result = obj.Add(2, 2);
-            Assert.AreEqual(4, result);
+            MathsComponent obj = new MathsComponent(); // tworznie nowego obiektu
+            int result = obj.Add(2, 2); //inicjowanie dwóch zmiennych liczbowych
+            Assert.AreEqual(4, result); // wynik który ma wyjsc z testu
         }
     }
 }
